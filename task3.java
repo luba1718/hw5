@@ -28,11 +28,9 @@ public class task3 {
         for (int i = 0; i < size; i++) {
             if (isSafe(i, col)) {
                 board[i][col] = 1;
-
                 if (placeQueens(col + 1)) {
                     return true;
                 }
-
                 board[i][col] = 0;
             }
         }
